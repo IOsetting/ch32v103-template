@@ -1,9 +1,9 @@
 TOOL_CHAIN_PATH ?= /opt/gcc-riscv/riscv-none-embed-gcc-10.2.0-1.2/bin
 OPENOCD_PATH    ?= /opt/openocd/wch-openocd/bin
-PROJECT_NAME    = test001
+PROJECT_NAME    = app
 
 TOP_DIR     := .
-OUTPUT_DIR  := $(TOP_DIR)/build
+OUTPUT_DIR  := $(TOP_DIR)/Build
 STARTUP_DIR := $(TOP_DIR)/Startup
 CORE_DIR    := $(TOP_DIR)/Core
 DEBUG_DIR   := $(TOP_DIR)/Debug
