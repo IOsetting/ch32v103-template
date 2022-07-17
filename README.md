@@ -21,9 +21,9 @@ CH32V103C-TEMPLATE
 
 ## Hardware
 
-* CH32V103x
+* CH32V103x  
   CH32V103C8T6 Bluepill or any CH32V10x EVB
-* WCH-Link 
+* WCH-Link  
   Qinheng ARM/RISC-V MCU programmer and debugger
 
 ## Install Toolchains
@@ -54,9 +54,11 @@ Download toolchains from [http://mounriver.com/download](http://mounriver.com/do
     ├── riscv-none-embed
     └── share
 ```
-**RISC-V Embedded GCC** is standard RISC-V gcc, you can replace it with a newer version from [https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases). Extract it to /opt/gcc-riscv
+**RISC-V Embedded GCC**  
+Standard RISC-V gcc, you can replace it with a newer version from [https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases). Extract it to /opt/gcc-riscv
 
-**OpenOCD** is a customized version for WCH-Link, Extract it to /opt/openocd
+**OpenOCD**  
+A customized OpenOCD for WCH-Link, Extract it to /opt/openocd
 
 ## UDEV Rules and Libs
 
@@ -64,7 +66,7 @@ Run *start.sh* under beforeinstall, or manually setup the udev rules and the dyn
 ```bash
 ./openocd -f wch-riscv.cfg -c init -c halt
 ```
-It should recoginize WCH-Link correctly
+if everything goes correctly
 ```
 ...
 Info : WCH-Link-CH549  mod:RV version 2.5 
@@ -99,7 +101,7 @@ make
 # download
 make flash
 ```
-If everything runs correctly, you will see the C13 LED blinking.
+If everything goes correctly, you will see the C13 LED blinking.
 
 # License
 
